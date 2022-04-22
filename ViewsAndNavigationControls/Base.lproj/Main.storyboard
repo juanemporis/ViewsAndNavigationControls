@@ -26,8 +26,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8p-9S-4la">
                                 <rect key="frame" x="0.0" y="43" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWK-SX-TvH">
-                                        <rect key="frame" x="0.0" y="-8" width="414" height="818"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWK-SX-TvH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65e-gJ-Uq5">
                                                 <rect key="frame" x="0.0" y="9" width="414" height="200"/>
@@ -45,8 +45,12 @@
                                                     <constraint firstAttribute="bottom" secondItem="IRN-Z8-z7A" secondAttribute="bottom" constant="92" id="gtD-vq-hIR"/>
                                                 </constraints>
                                             </view>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-9D-lfD">
+                                                <rect key="frame" x="0.0" y="205" width="414" height="338"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </mapView>
                                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLP-Oh-b30">
-                                                <rect key="frame" x="0.0" y="201" width="414" height="289"/>
+                                                <rect key="frame" x="0.0" y="541" width="414" height="289"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <wkWebViewConfiguration key="configuration">
@@ -73,64 +77,22 @@
                                     <constraint firstItem="AWK-SX-TvH" firstAttribute="centerX" secondItem="q8p-9S-4la" secondAttribute="centerX" id="hXF-qy-JYT"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXq-dl-Prd">
-                                <rect key="frame" x="0.0" y="819" width="414" height="400"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIo-sw-Ki1">
-                                        <rect key="frame" x="20" y="0.0" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdr-Ib-N8o">
-                                        <rect key="frame" x="173.5" y="66" width="67" height="258"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="myButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nse-Dc-bNs"/>
-                                        </connections>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="myImage2" translatesAutoresizingMaskIntoConstraints="NO" id="iXy-qK-Rix">
-                                        <rect key="frame" x="0.0" y="-295" width="414" height="297"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="297" id="peZ-gL-BOh"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="Jdr-Ib-N8o" firstAttribute="top" secondItem="RXq-dl-Prd" secondAttribute="top" constant="66" id="5Wx-Tx-fAm"/>
-                                    <constraint firstAttribute="bottom" secondItem="Jdr-Ib-N8o" secondAttribute="bottom" constant="76" id="7fr-0v-aYH"/>
-                                    <constraint firstItem="iXy-qK-Rix" firstAttribute="leading" secondItem="RXq-dl-Prd" secondAttribute="leading" id="Iud-rV-0X2"/>
-                                    <constraint firstAttribute="height" constant="400" id="OYm-iP-ibv"/>
-                                    <constraint firstItem="rIo-sw-Ki1" firstAttribute="leading" secondItem="RXq-dl-Prd" secondAttribute="leading" constant="20" id="Uag-aK-Brz"/>
-                                    <constraint firstItem="Jdr-Ib-N8o" firstAttribute="centerX" secondItem="RXq-dl-Prd" secondAttribute="centerX" id="esw-HR-vMg"/>
-                                    <constraint firstItem="iXy-qK-Rix" firstAttribute="top" secondItem="RXq-dl-Prd" secondAttribute="top" constant="-295" id="h1F-kP-J8m"/>
-                                    <constraint firstItem="rIo-sw-Ki1" firstAttribute="top" secondItem="RXq-dl-Prd" secondAttribute="top" id="pPi-a2-txM"/>
-                                    <constraint firstItem="iXy-qK-Rix" firstAttribute="top" secondItem="RXq-dl-Prd" secondAttribute="top" constant="-295" id="sYc-Y8-khw"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rIo-sw-Ki1" secondAttribute="trailing" constant="20" symbolic="YES" id="wNl-y0-sfA"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="RXq-dl-Prd" secondAttribute="bottom" constant="-323" id="2GO-SN-AnX"/>
                             <constraint firstItem="QgJ-gX-eoe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="350" id="41f-HI-HMI"/>
                             <constraint firstItem="QgJ-gX-eoe" firstAttribute="trailing" secondItem="q8p-9S-4la" secondAttribute="trailing" id="EIf-8E-kj8"/>
                             <constraint firstItem="q8p-9S-4la" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-1" id="Eql-Pv-lq4"/>
                             <constraint firstItem="q8p-9S-4la" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-1" id="KYj-yb-Nyf"/>
-                            <constraint firstItem="RXq-dl-Prd" firstAttribute="leading" secondItem="65e-gJ-Uq5" secondAttribute="leading" id="MDY-1t-Baa"/>
                             <constraint firstItem="q8p-9S-4la" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RzN-eH-5GM"/>
                             <constraint firstItem="QgJ-gX-eoe" firstAttribute="leading" secondItem="q8p-9S-4la" secondAttribute="leading" id="fyM-7x-piK"/>
-                            <constraint firstItem="RXq-dl-Prd" firstAttribute="trailing" secondItem="65e-gJ-Uq5" secondAttribute="trailing" id="n59-jY-vgk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q8p-9S-4la" secondAttribute="trailing" id="xO7-hB-eBh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myFakeView" destination="65e-gJ-Uq5" id="I2i-kU-nwG"/>
-                        <outlet property="myImage" destination="iXy-qK-Rix" id="IGR-fE-1ZA"/>
-                        <outlet property="myView" destination="RXq-dl-Prd" id="fzR-Wj-80a"/>
+                        <outlet property="myMap" destination="Ta3-9D-lfD" id="lBd-mE-Zna"/>
                         <outlet property="myWebView" destination="WLP-Oh-b30" id="v7h-cM-ho0"/>
                     </connections>
                 </viewController>
@@ -140,7 +102,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="myImage2" width="728" height="455"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

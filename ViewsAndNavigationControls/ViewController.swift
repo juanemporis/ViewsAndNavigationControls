@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import MapKit
 
 class ViewController: UIViewController {
 
@@ -14,11 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var myImage: UIImageView!
     @IBOutlet weak var myFakeView: UIView!
     @IBOutlet weak var myWebView: WKWebView!
+    @IBOutlet weak var myMap: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //MY WEB VIEW
         myWebView.load(URLRequest(url: URL(string: "https://google.es")!))
+        
+        //MY MAP
+        myMap.centerCoordinate =
+        CLLocationCoordinate2D(latitude: 42.6074875, longitude: -8.3132621)
     }
         
     @IBAction func myButtonAction(_ sender: Any) {
