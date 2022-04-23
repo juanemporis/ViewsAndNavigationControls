@@ -13,6 +13,7 @@
 		C888701E2811E9A600E08201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C888701C2811E9A600E08201 /* Main.storyboard */; };
 		C88870202811E9AC00E08201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C888701F2811E9AC00E08201 /* Assets.xcassets */; };
 		C88870232811E9AC00E08201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88870212811E9AC00E08201 /* LaunchScreen.storyboard */; };
+		C895C33A28136B9A00E76020 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C895C33928136B9A00E76020 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C888701F2811E9AC00E08201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C88870222811E9AC00E08201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C88870242811E9AC00E08201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C895C33928136B9A00E76020 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C888701F2811E9AC00E08201 /* Assets.xcassets */,
 				C88870212811E9AC00E08201 /* LaunchScreen.storyboard */,
 				C88870242811E9AC00E08201 /* Info.plist */,
+				C895C33928136B9A00E76020 /* PageViewController.swift */,
 			);
 			path = ViewsAndNavigationControls;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				C888701B2811E9A600E08201 /* ViewController.swift in Sources */,
 				C88870172811E9A600E08201 /* AppDelegate.swift in Sources */,
 				C88870192811E9A600E08201 /* SceneDelegate.swift in Sources */,
+				C895C33A28136B9A00E76020 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
